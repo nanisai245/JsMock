@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <header>
+            <h1>Pay Role Management</h1>
+            <p>Enter the bill amount and the cash given by the customer and know the minimum number of notes to return
+            </p>
+        </header>
+
+        <form autocomplete="off">
+            <div class="input-field">
+                <label for="bill">Enter the bill amount</label>
+                <input id="bill" type="number" placeholder="Enter bill amount" class="bill-input" />
+                <p class="error bill"></p>
+            </div>
+
+            <div class="input-field">
+                <label for="cash">Cash Given</label>
+                <input id="cash" type="number" placeholder="Enter cash given" class="cash-input" />
+                <p class="error cash"></p>
+            </div>
+
+            <p class="alert"></p>
+
+            <button type="submit" class="btn">Check</button>
+        </form>
+
+        <table>
+            <caption>Return Change</caption>
+            <!-- <thead> -->
+            <tr height="150px" class="first">
+                <th colspan="2">No of Notes</th>
+                <td class="twoK"></td>
+                <td class="fiveH"></td>
+                <td class="hundred"></td>
+                <td class="twenty"></td>
+                <td class="ten"></td>
+                <td class="five"></td>
+                <td class="one"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+            <!-- </thead> -->
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
